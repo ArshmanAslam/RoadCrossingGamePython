@@ -28,6 +28,7 @@ while game_is_on:
     for x in car.all_cars:
         if player.distance(x) < 20:
             game_is_on = False
+            screen.clear()
             level.game_over()
 
     screen.update()
